@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
 
   s.source_files = "ios/**/*.{h,m,swift}"  
 
-  s.dependency "React"
-	
-  # s.dependency "..."
+  s.dependency "React"	
+  s.dependency "Alamofire", "~> 4.7.3"
+
 end
 
