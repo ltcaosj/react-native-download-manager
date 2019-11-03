@@ -1,7 +1,7 @@
 {
   "name": "@react-native-lightkits/download-manager",
   "title": "React Native Download Manager",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "TODO",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "react-native"
   ],
   "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
+    "name": "Long Cao",
+    "email": "ltcaosj@gmail.com"
   },
   "license": "MIT",
   "licenseFilename": "LICENSE",

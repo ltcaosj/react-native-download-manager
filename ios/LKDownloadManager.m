@@ -1,14 +1,21 @@
-#import "LKDownloadManager.h"
+#import <Foundation/Foundation.h>
 
+#import "React/RCTBridgeModule.h"
+#import "React/RCTEventEmitter.h"
 
-@implementation LKDownloadManager
+@interface RCT_EXTERN_MODULE(LKDownloadManager, RCTEventEmitter) //To support event emitter
 
-RCT_EXPORT_MODULE()
-
-RCT_EXPORT_METHOD(sampleMethod:(NSString *)stringArgument numberParameter:(nonnull NSNumber *)numberArgument callback:(RCTResponseSenderBlock)callback)
-{
-    // TODO: Implement some actually useful functionality
-	callback(@[[NSString stringWithFormat: @"numberArgument: %@ stringArgument: %@", numberArgument, stringArgument]]);
-}
+RCT_EXTERN_METHOD(
+                  download:(NSString *)url
+                  toFilePath:(NSString *)toFilePath
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter: (RCTPromiseRejectBlock)reject
+                  )
+RCT_EXTERN_METHOD(
+                  downloadWithProgress:(NSString *)url
+                  toFilePath:(NSString *)toFilePath
+                  resolver:(RCTPromiseResolveBlock)resolve
+                  rejecter: (RCTPromiseRejectBlock)reject
+                  )
 
 @end

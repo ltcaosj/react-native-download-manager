@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EEB732F236F0E3B00F3F8B2 /* LKDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB732E236F0E3B00F3F8B2 /* LKDownloadManager.swift */; };
+		5EEB7331236F0E9700F3F8B2 /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EEB7330236F0E9700F3F8B2 /* FileUtils.swift */; };
 		B3E7B58A1CC2AC0600A0062D /* LKDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* LKDownloadManager.m */; };
 /* End PBXBuildFile section */
 
@@ -25,7 +27,8 @@
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libLKDownloadManager.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLKDownloadManager.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EEB732B236F08B200F3F8B2 /* LKDownloadManager-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LKDownloadManager-Bridging-Header.h"; sourceTree = "<group>"; };
-		B3E7B5881CC2AC0600A0062D /* LKDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDownloadManager.h; sourceTree = "<group>"; };
+		5EEB732E236F0E3B00F3F8B2 /* LKDownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKDownloadManager.swift; sourceTree = "<group>"; };
+		5EEB7330236F0E9700F3F8B2 /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* LKDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDownloadManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -51,7 +54,8 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* LKDownloadManager.h */,
+				5EEB7330236F0E9700F3F8B2 /* FileUtils.swift */,
+				5EEB732E236F0E3B00F3F8B2 /* LKDownloadManager.swift */,
 				B3E7B5891CC2AC0600A0062D /* LKDownloadManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				5EEB732B236F08B200F3F8B2 /* LKDownloadManager-Bridging-Header.h */,
@@ -116,6 +120,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EEB7331236F0E9700F3F8B2 /* FileUtils.swift in Sources */,
+				5EEB732F236F0E3B00F3F8B2 /* LKDownloadManager.swift in Sources */,
 				B3E7B58A1CC2AC0600A0062D /* LKDownloadManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
