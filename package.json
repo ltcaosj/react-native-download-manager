@@ -1,0 +1,35 @@
+{
+  "name": "@react-native-lightkits/download-manager",
+  "title": "React Native Download Manager",
+  "version": "1.0.0",
+  "description": "TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ltcaosj/react-native-download-manager.git",
+    "baseUrl": "https://github.com/ltcaosj/react-native-download-manager"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "Your Name",
+    "email": "yourname@email.com"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "^16.9.0",
+    "react-native": ">=0.61.2"
+  },
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-native": "^0.61.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "eslint": "^6.5.1"
+  }
+}
