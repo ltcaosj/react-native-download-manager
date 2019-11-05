@@ -41,3 +41,6 @@ import LKDownloadManager from 'react-native-download-manager';
 // TODO: What to do with the module?
 LKDownloadManager;
 ```
+
+## Create module command
+create-react-native-module download-manager --prefix LK --package-identifier lightkits.downloadmanager
