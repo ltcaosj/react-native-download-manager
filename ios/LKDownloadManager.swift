@@ -23,6 +23,17 @@ class LKDownloadManager: RCTEventEmitter {
   }
   
   @objc
+  func clearCacheDirectory(_ directoryPath : String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
+    FileUtils.deleteDirectory(name: directoryPath, atDirectory: FileManager.SearchPathDirectory.cachesDirectory)
+    resolve(true)
+  }
+    
+  @objc
+  func deleteFile(_ filePath : String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {    
+    FileUtils.deleteFilePath(name: filePath)
+   resolve(true)
+  }
+  @objc
   func download(_ url : String,  toFilePath : String, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) -> Void {
     let downloadDestination = DownloadRequest.suggestedDownloadDestination(for: FileManager.SearchPathDirectory.cachesDirectory, in: FileManager.SearchPathDomainMask.allDomainsMask)
     //

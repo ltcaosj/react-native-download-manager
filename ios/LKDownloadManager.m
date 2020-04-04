@@ -17,5 +17,14 @@ RCT_EXTERN_METHOD(
                   resolver:(RCTPromiseResolveBlock)resolve
                   rejecter: (RCTPromiseRejectBlock)reject
                   )
-
+RCT_EXTERN_METHOD(
+                clearCacheDirectory:(NSString *)directoryPath                
+                resolver:(RCTPromiseResolveBlock)resolve
+                rejecter: (RCTPromiseRejectBlock)reject
+                )
+RCT_EXTERN_METHOD(
+                deleteFile:(NSString *)filePath
+                resolver:(RCTPromiseResolveBlock)resolve
+                rejecter: (RCTPromiseRejectBlock)reject
+                )
 @end

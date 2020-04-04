@@ -7,4 +7,15 @@ const downloadFile = async (url, destPath) => {
   return `${filePath}`;
 };
 
-export {LKDownloadManager, downloadFile};
+const clearCacheDirectory = async (directory) => {
+  return  LKDownloadManager.clearCacheDirectory(directory);  
+};
+
+const deleteFile = async (destPath) => {
+  const filePath = await LKDownloadManager.deleteFile(destPath);
+  return `${filePath}`;
+};
+
+
+
+export {LKDownloadManager, downloadFile, clearCacheDirectory, deleteFile};

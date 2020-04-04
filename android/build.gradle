@@ -64,6 +64,7 @@ dependencies {
     //noinspection GradleDynamicVersion
     implementation 'com.facebook.react:react-native:+'  // From node_modules
     implementation 'dev.dworks.libs:volleyplus:+'
+    implementation 'org.apache.commons:commons-io:+'
 }
 
 def configureReactNativePom(def pom) {

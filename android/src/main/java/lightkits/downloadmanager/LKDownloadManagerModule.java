@@ -10,7 +10,10 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 
+import org.apache.commons.io.FileUtils;
+
 import java.io.File;
+import java.io.IOException;
 
 public class LKDownloadManagerModule extends ReactContextBaseJavaModule {
 
@@ -56,6 +59,32 @@ public class LKDownloadManagerModule extends ReactContextBaseJavaModule {
         downloadRequest.setShouldCache(false);
         //
         mRequestQueue.add(downloadRequest);
+    }
+
+    @ReactMethod
+    public void deleteFile(final String filePath,final Promise promise) {
+        final File toFile = new File(filePath);
+        if(toFile.exists()){
+            toFile.delete();
+        }
+        //
+        promise.resolve(toFile.getAbsolutePath());
+    }
+
+
+    @ReactMethod
+    public void clearCacheDirectory(final String filePath, final Promise promise) {
+        //
+        final File toFile = new File(this.getReactApplicationContext().getApplicationContext().getCacheDir() + filePath);
+        try {
+            FileUtils.deleteDirectory(toFile);
+            promise.resolve(toFile.getAbsolutePath());
+        } catch (IOException e) {
+            e.printStackTrace();
+            promise.resolve("");
+        }
+        //
+
     }
 }
 
